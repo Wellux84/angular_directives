@@ -7,4 +7,9 @@
   <img *ngIf="show" style="width:150px; height:150px" src="kukka.jpg" alt="-no pic!">
   <ng-template #noPic></ng-template>
 </div>
+<div>
+      <ul>
+      <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+</div>
 <router-outlet />

@@ -18,4 +18,6 @@ export class App {
   toggle() {
     this.show = !this.show;
   }
+  items: string[] = ['Finland', 'Sweden', 'Estonia', 'Spain', 'Japan'];
+
 }
