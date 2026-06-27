@@ -2,5 +2,9 @@
   <h1 appTextColor="green" appFontSize="36px">This is green and BIG!</h1>
 <h1 appTextColor="blue" appFontSize="24px">And this is blue n' Little bit smaller!</h1>
 </div>
-
+<div>
+  <button (click)="toggle()">Show/Hide Pic</button>
+  <img *ngIf="show" style="width:150px; height:150px" src="kukka.jpg" alt="-no pic!">
+  <ng-template #noPic></ng-template>
+</div>
 <router-outlet />
